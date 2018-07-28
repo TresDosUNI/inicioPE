@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+	 <meta name="author" content="mendoza oviedo maycol nay ">
+<meta name="description" content="redsocial">
+	<title>Tres Dos Uni</title>
+	<link href="tres dos uni.jpg" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" href="TRES DOS UNI.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+<!-- Header -->
+	<header id="header">
+	<h1 class="tinder"><font color="#ffffff"><a href="index.html" title="iMOC"><i>Tres Dos UNI</i></a></font></h1>
+<!--seleciones de opciones-->
+<div class="select" >
+<select  name="formal"  onchange="javascript:handleSelect(this)" title="Ordenar segun:">
+<option value="index"> Todos </option>
+<option value="Ciencias"> Facultad de Ciencias</option>
+<option value="Ingenieria"> Facultad de Ingenieria</option>
+<option value="Humanidades"> Facultad de Educacion y Humaninades</option>
+<option value="lOAD"> Salir de iMOC </option>
+</select>
+</div>
+<!--fin de las seleciones de opciones-->
+	<nav class="main">
+	 <ul>
+	<li class="search">
+	<a class="fa-search" href="#search"></a>
+	<form id="search" method="get" action="#">
+	<input type="text" name="query" placeholder="Search"/></form></li>
+	<a href="" title=""><li class="menu">
+		<img   src="uns.jpg" alt="" width="45" height="45">
+	</li></a>
+	</ul>
+    </nav>
+    </header>
+<br class="brclass1">
+<center>
+<div class="parte">
+<main class="keisha">
+ <section class="photoMO">              
+ <div class="initial">
+<span class="photo__icon"></span>
+<span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="home.png"/><p class="dein">Inicio</p></a> </span>
+  <span class="photo__icon">
+ <a href="eco.html" title=""  class="sec_noticias"><img  class="imgparte1" src="arbol2.png"/><p class="dein">Ecovida</p></a></span>
+ <span class="photo__icon">
+ <a href="ce.html" title="Informacion para pensar"  class="sec_noticias"><img  class="imgparte1" src="cerebro.png"/><p class="dein"><pre> Info</pre> </p></a></span>
+<span class="photo__icon"> <a href="medi.html" title="" class="sec_noticias" ><img  class="imgparte1" src="doctor.png"/></a><p class="dein">Doctor</p></span>
+<span class="photo__icon"><a href="index.html" title="Selecciona nuestro chatbot" class="sec_noticias" > <img  class="imgparte1" src="manoartificial.png"/><p class="dein">ChatBot</p></a> </span>
+                    </div>           
+            </section>
+        </main>
+    </div></center>
+
+
+<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+
+  <i ><img  class="ir" src="tres dos uni.jpg" alt="" width="80" height="80"></i>
+</a>
+<!---script para que funcione arriba -->
+
+<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
+
+<!---fin de script para que funcione arriba-->
+
+
+
+
+    <br class="brclass">
+
+
+
+<!---secccion de  noticias para cada noticia web--->
+
+    <div class="row">
+<main class="feed">
+ <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="tres dos uni.jpg"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">Tres Dos UNI</span>
+                        <span class="photo__location"><font color="#566573"> Universidad Nacional del Santa </font></span>
+
+                    </div>
+                </header>
+
+                <div class="photo__file-container" id="feedback-bg-info">
+                	<center>
+<iframe src="https://web.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2Ftresdosuni%2Fvideos%2F2180042312274699%2F&show_text=0&width=560" width="100%" height="515" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+</center>
+                </div> 
+                        
+                <div class="photo__info">
+                	 <span class="photo__time-ago">35 minutos</span><br>
+
+                	 <!---reseña--->
+<div id="caja"><p></p></div>
+<div id="caja2"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar(){
+
+   document.getElementById("caja").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("caja2").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+
+                    <div class="photo__icons">
+                       <a href="index.html"> <span class="photo__icon">
+                         <i class="fa "> <a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0">
+                           <img src="ojo.png" alt="" width="30" height="30" class="circuloimg"></a> </i> 
+                        </span>
+                    </a>
+                       
+                         <span class="descargar">
+                            <i class="fa "><a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0" title="descargar"  target="_blank"><img src="descargar.png" alt="" width="30" height="30" class="circuloimg"></a></i>
+                        </span> 
+                        <a href="shered.html" title="compartir">  <span class="icon">
+                             <i class="fa ">
+                   <img src="share.png" alt="" width="30" height="30" class="circuloimg">
+                            </i>	
+                        </span></a>  
+                    </div>  
+                    <span class="photo__likes"></span>                   
+                    <div class="photo__add-comment-container">
+                       <!-- <textarea placeholder="Add a comment..." class="photo__add-comment"></textarea>-->
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </section>
+            <!---Fin de la secccion de  noticias para cada noticia web--->
+
+
+
+
+
+
+   <br class="brclass">
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="tres dos uni.jpg"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">Tres Dos UNI</span>
+                        <span class="photo__location"><font color="#566573"> Nuevo Chimbote </font></span>
+
+                    </div>
+                </header>
+
+                <div class="photo__file-container" id="feedback-bg-info">
+                	<center>
+<iframe src="https://web.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2Ftresdosuni%2Fvideos%2F2180042312274699%2F&show_text=0&width=560" width="100%" height="515" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+</center>
+                </div> 
+                        
+                <div class="photo__info">
+                	 <span class="photo__time-ago">35 minutos</span><br>
+
+                	 <!---reseña--->
+<div id="caja"><p></p></div>
+<div id="caja2"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar(){
+
+   document.getElementById("caja").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("caja2").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+
+                    <div class="photo__icons">
+                       <a href="index.html"> <span class="photo__icon">
+                         <i class="fa "> <a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0">
+                           <img src="ojo.png" alt="" width="30" height="30" class="circuloimg"></a> </i> 
+                        </span>
+                    </a>
+                       
+                         <span class="descargar">
+                            <i class="fa "><a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0" title="descargar"  target="_blank"><img src="descargar.png" alt="" width="30" height="30" class="circuloimg"></a></i>
+                        </span> 
+                        <a href="shered.html" title="compartir">  <span class="icon">
+                             <i class="fa ">
+                   <img src="share.png" alt="" width="30" height="30" class="circuloimg">
+                            </i>	
+                        </span></a>  
+                    </div>  
+                    <span class="photo__likes"></span>                   
+                    <div class="photo__add-comment-container">
+                       <!-- <textarea placeholder="Add a comment..." class="photo__add-comment"></textarea>-->
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </section>
+            <!---Fin de la secccion de  noticias para cada noticia web--->
+
+               <br class="brclass">
+
+
+                    <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="tres dos uni.jpg"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">Tres Dos UNI </span>
+                        <span class="photo__location"><font color="#566573"> Nuevo Chimbote </font></span>
+
+                    </div>
+                </header>
+
+                <div class="photo__file-container" id="feedback-bg-info">
+                	<center>
+<iframe src="https://web.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2Ftresdosuni%2Fvideos%2F2180042312274699%2F&show_text=0&width=560" width="100%" height="515" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+</center>
+                </div> 
+                        
+                <div class="photo__info">
+                	 <span class="photo__time-ago">35 minutos</span><br>
+
+                	 <!---reseña--->
+<div id="caja"><p></p></div>
+<div id="caja2"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar(){
+
+   document.getElementById("caja").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("caja2").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+
+                    <div class="photo__icons">
+                       <a href="index.html"> <span class="photo__icon">
+                         <i class="fa "> <a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0">
+                           <img src="ojo.png" alt="" width="30" height="30" class="circuloimg"></a> </i> 
+                        </span>
+                    </a>
+                       
+                         <span class="descargar">
+                            <i class="fa "><a href="https://www.dropbox.com/s/hnxz1v3mve8fx9q/anatomial.pdf?dl=0" title="descargar"  target="_blank"><img src="descargar.png" alt="" width="30" height="30" class="circuloimg"></a></i>
+                        </span> 
+                        <a href="shered.html" title="compartir">  <span class="icon">
+                             <i class="fa ">
+                   <img src="share.png" alt="" width="30" height="30" class="circuloimg">
+                            </i>	
+                        </span></a>  
+                    </div>  
+                    <span class="photo__likes"></span>                   
+                    <div class="photo__add-comment-container">
+                       <!-- <textarea placeholder="Add a comment..." class="photo__add-comment"></textarea>-->
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </section>
+            <!---Fin de la secccion de  noticias para cada noticia web--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+
+
+
+
+
+
+<!-- librerías js -->
+
+<!-- jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- 
+Font Awesome js 
+
+para generar su propio Font Awesome js les recomiendo ver este video -> https://youtu.be/g53yHVQGXh8
+
+Este script lo genere para este tutorial les recomiendo que lo cambien gracias :)
+-->
+<script src="https://use.fontawesome.com/a18b0c2e94.js"></script>
+
+</body>
+</html>
